@@ -3,7 +3,7 @@
 	<head>
 		<title> Contact Us | E-Novate</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet"/>
-		<link href="contactus.css" rel="stylesheet"/>
+		<link href="css/main.css" rel="stylesheet"/>
 		<style>
 			@font-face {
 				font-family: montserrat;
@@ -36,6 +36,10 @@
 			p {
 				font-family: montserrat;
 			}
+
+			.form_sheet {
+				background: url(images/paper.jpg);
+			}
 	
 		</style>
 	</head>
@@ -65,19 +69,43 @@
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
-		<form method="post">
-			<h2>Contact Form</h2>
-			<p>Please fill out the form below to allow us to contact you and vice-versa.</p>
 
+		<br/>
+		<br/>
+		<div class="form_sheet">
+		<center style="border-bottom: 5px solid black">
+			<nav class="our_company">
+				<h1 style="color:#000000">Contact Form</h1>
+			</nav>
+		</center>
+		<form method="post">
+			<p>Please fill out the form below to allow us to contact you and vice-versa.</p>
+			<br/>
+			<table>
+			<tr>
+			<td>
 			<label for="name">Full Name:</label>
 			<input type="text" id="name" name="name" required>
-
+			</td>
+			<td style="padding-left: 20px;">
 			<label for="email">Email:</label>
 			<input type="email" id="email" name="email" required>
-
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="phone">Sex:</label>
+			<input type="radio" name="gender" value="male">Male
+			<input type="radio" name="gender" value="female">Female
+			</td>
+			<td style="padding-left: 20px;">
 			<label for="phone">Phone Number:</label>
 			<input type="tel" id="phone" name="phone" required>
-
+			</td>
+			</tr>
+			</table>
+			<br/>
+			<br/>
 			<label for="position">Purpose of Contact:</label>
 			<select id="position" name="position" required>
 				<option value="" disabled selected>Purpose</option>
@@ -87,13 +115,26 @@
 				<option value="services">Service Inquiry</option>
 				<option value="others">Others</option>
 			</select>
+			<br/>
+			<br/>
 			<label for="otherpurpose">If others, please specify:</label>
-
-			<textarea id="others" name="others" rows="4" cols="50">
+			<br/>
+			<textarea id="others" name="others" rows="20" cols="75%">
 			</textarea>
-
+			<br/>
 		    <input type="submit" value="Submit Contact">
 		</form>
+		</div>
+
+		<br/>
+		<br/>
+
+
+
+
+
+
+
 		<footer>
 			<div class="footer_content">
 				<table>
