@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+
+/*Title Text*/
+.title h1 {
+    font-family: "Arial Black";
+    font-size: 75px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    /* -webkit-text-stroke: 4px #d32c2c; */
+    text-align: center;
+}
+
+/*Dropdown Section Position*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*Dropdown Menu Design*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+}
+
+/*Drowndown menu appears if hovered*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Center and Background of Navigation Bar*/
+nav.center {
+    text-align: center;
+    background: #1E2328;
+    border-bottom: 1px solid rgb(237, 226, 3);
+}
+
+/*Logo Position*/
+.logo img {
+    float: left;
+    position:relative; 
+    left: 80px; 
+    top: 3px;
+    background: #1E2328;
+}
+
+/*Navigation List Format*/
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 3;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+
+/*Navigation Item Positioning*/
+.navigation li {
+    float: left;
+    padding: 3px;
+    padding-left: 3px;
+    border-right: 1px solid gray;
+}
+
+/*Changes Navigation Item Design*/
+.navigation a:link, a:visited {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #1E2328;
+    color: #ffffff;
+    padding: 5px;
+}
+
+/*Changes Navigation Color when Hovered*/
+.navigation a.text-warning:hover, a:active {
+    background-color: #b68708;
+}
+
+.navigation a:hover, a:active {
+    background-color: #b68708;
+}
+
+/*Makes Background White*/
+.white_block {
+    background: #ffffff;
+}
+
+/*Image Gallery Code*/
+div.gallery {
+    margin: 1px;
+    border: 3px solid #FED053;
+    float: left;
+    width: 450px;
+    height: 600px;
+    padding: 50px;
+    background-color: #1E2328;
+    filter: brightness(50%);
+}
+  
+div.gallery:hover {
+    border: 1px solid #2A2E34;
+    background-color: #F5B301;
+    filter: brightness(100%);
+}
+
+.coming_soon{
+    margin: 1px;
+    border: 3px solid #FED053;
+    float: left;
+    width: 450px;
+    height: 600px;
+    padding: 50px;
+    background-color: #1E2328;
+    filter: brightness(50%);
+}
+
+div.coming_soon:hover {
+    filter: brightness(100%);
+}
+
+div.gallery img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+.image_text p {
+    font-size: 60px;
+    padding: 0px;
+    font-family: "Arial Black";
+    text-align: center;
+    color: white;
+}
+
+/* Add Round Box */
+.round_box {
+    padding: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 5px;
+    border-color: #FDCA00;
+    background-position: bottom right;
+    background: #52aac8;
+    background: linear-gradient(180deg, #494b56 0%, #1d1c22 100%);
+    margin: 1px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+  
+.row {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.row p {
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .round_box{
+    min-height: 600px;
+    border-radius: 50px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff5e;
+    color: white;
+    text-align: center;
+    max-height: 375px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+ul.traits{
+    display: inline-block;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer_content {
+    background-image: linear-gradient(#34344d92, #0b0c1092);
+    align-items: left;
+    padding-right: 20px;
+    min-height: 300px;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.footer_content td{
+    padding: 50px;
+    line-height: 23px;
+}
+
+.footer_content ul{
+    text-align: left;
+}
+
+.footer_content a{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.footer_content h5{
+    text-align: left;
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.value {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.our_company {
+    text-align: center;
+    color: #ffffff;
+}
+
+.our_company h1 {
+    font-size: 100px;
+}
+
+.our_company h1 b{
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.about h1 {
+    padding-left: 30px;
+}
+
+.about mark {
+    background: linear-gradient(180deg, #ffea00 0%, #ffb300 100%);
+    border-bottom: 1px solid rgb(23, 20, 60);
+    border-left: 1px solid rgb(237, 226, 3);
+    border-top: 1px solid rgb(237, 226, 3);
+    border-right: 1px solid rgb(237, 226, 3);
+    color:#000000;
+}
+
+.about nav{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 30px;
+    background: linear-gradient(180deg, #494b56 0%, #1d1c22 100%);
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(237, 226, 3);
+    border-left: 1px solid rgb(237, 226, 3);
+    border-top: 1px solid rgb(237, 226, 3);
+    border-right: 1px solid rgb(237, 226, 3);
+}  
+
+.about {
+    color:#ffffff;
+}
+
+.round_box p {
+    color: #ffffff;
+}
+
+.round_box h1 {
+    font-size: 60px;
+    color: #FDCA00;
+}
+
+.round_box h2 {
+    font-size: 50px;
+    color: #FDCA00;
+}
+
+.left-image img{
+    float: left;
+    padding-left: 30px;
+}
+
+.right-image img{
+    padding-right: 30px;
+}
+
+.right-image table{
+    float: right;
+    padding-right: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.chair_pad td{
+    padding-right: 5px;
+}
+
+.chair_pad td:hover img{
+    filter: brightness(50%);
+}
+
+.squares .round_box:hover{
+    filter: brightness(70%);
+}
+
+.justify p{
+    text-align: justify;
+}
+
+.about .id_item {
+    margin-left:0; 
+    margin-bottom:0px; 
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:0px;
+}
+
+.banner h1{
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 30px;
+    background: linear-gradient(180deg, #fbff00f0 0%, #c39500f0 100%);
+    margin-bottom: 30px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 5px;
+    border-color: #000000;
+}
+
+.banner nav {
+    padding-top: 150px;
+}
+
+.form_sheet {
+    margin-left:150px;
+    margin-right:150px;
+    max-width: 875px;
+    border: 5px solid #000000;
+    margin: auto;
+    width: 60%;
+}
+
+.form_sheet form {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.form_sheet table {
+    font-size: 20px;
+}
