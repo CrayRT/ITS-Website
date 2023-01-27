@@ -1,0 +1,131 @@
+<html>	
+	<!--Start of Head-->
+	<head>
+		<title> Job Application | E-Novate</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="jobapplication.css" rel="stylesheet"/>
+		<style>
+			@font-face {
+				font-family: montserrat;
+				src: url(fonts/montserrat.ttf);
+			}
+	
+			@font-face {
+				font-family: helmet;
+				src: url(fonts/helmet.ttf);
+			}
+	
+			@font-face {
+				font-family: chivo;
+				src: url(fonts/chivo.ttf);
+			}
+	
+			body {
+				background-image: linear-gradient(#32333dA0, rgba(0, 15, 34, 0.3)), url('images/background.png');
+			}
+	
+			.navigation {
+				font-family: chivo;
+				font-size: 20px;
+			}
+	
+			h1, h2, h3, h4, h5, h6 {
+				font-family: helmet;
+			}
+	
+			p {
+				font-family: montserrat;
+			}
+	
+		</style>
+	</head>
+	<!--End of Head-->
+	
+	<!--Start of Body-->
+	<body>
+		<form method="post">
+		  <h2>Job Application Form</h2>
+		  <p>Please fill out the form below to apply for a position at our tech company.</p>
+
+		  <label for="name">Full Name:</label>
+		  <input type="text" id="name" name="name" required>
+
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" name="email" required>
+
+		  <label for="phone">Phone Number:</label>
+		  <input type="tel" id="phone" name="phone" required>
+
+		  <label for="position">Position Applied For:</label>
+		  <select id="position" name="position" required>
+			<option value="" disabled selected>Select a Position</option>
+			<option value="developer">Developer</option>
+			<option value="designer">Designer</option>
+			<option value="qa">QA Engineer</option>
+			<option value="project_manager">Project Manager</option>
+		  </select>
+
+		  <label for="resume">Upload Resume:</label>
+		  <input type="file" id="resume" name="resume" accept="application/pdf" required>
+
+		  <label for="cover_letter">Upload Cover Letter:</label>
+		  <input type="file" id="cover_letter" name="cover_letter" accept="application/pdf" required>
+
+		  <input type="submit" value="Submit Application">
+		</form>
+		<br/>
+<br/>
+<br/>
+<footer>
+	<div class="footer_content">
+		<table>
+			<tr>
+				<td style="padding-left:0px;">
+					<img src="images/logo.png" height="200px"/>
+					<h4>E-Novate</h4>
+				</td>
+				<td style="font-family: chivo;border-left: 1px solid rgb(255, 255, 255);">
+					<h5 style="color: #FDCA00; font-family: Chivo;"><b>QUICK LINKS</b></h5>
+					<ul style="border-left: 1px solid rgb(255, 255, 255);">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="mission.html">Mission and Vision</a></li>
+						<li><a href="products.html">Our Products</a></li>
+					</ul>
+				</td>
+				<td style="font-family: chivo; padding-left:150px; padding-right: 150px;">
+					<h5>ㅤ</h5>
+					<ul style="border-left: 1px solid rgb(255, 255, 255);">
+						<li><a href="facilities.html">Facilities</a></li>
+						<li><a href="sustainability.html">Sustainability</a></li>
+						<li><a href="job.html">Job Application</a></li>
+						<li style="list-style-type: none;">ㅤ</li>
+					</ul>
+				</td>
+				<td style="padding-left:95px; padding-right: 0px;">
+				</td>
+				<td style="border-left: 1px solid rgb(255, 255, 255);">
+					<table>
+					<tr>
+					<td style="padding:0;padding-top:20px;font-family:chivo;"><a class="round_box" href="contact.html" style="font-size:30px;color:#000000;border-color:lightgray;background: linear-gradient(180deg, #ffffff 0%, #929292 100%);
+						text-decoration: none;"><b>Contact Us</b></a></td>
+					</tr>
+					<tr>
+					<td style="padding:0; padding-top: 50px;"><h5>Email:</h5>
+					<p>enovate@gmail.com</p>
+					<h5>Contact Number:</h5>
+					<p>(+63)975 467 3452</p></td>
+					</tr>
+					</table>
+				</td>
+
+			</tr>
+		</table>
+	</div>
+	<div>
+	<p class="bg-danger">E-Novate © Copyright 2023. All Rights Reserved</p>
+	</div>	
+</footer>
+	</body>
+	<!--End of Body-->
+</html>
